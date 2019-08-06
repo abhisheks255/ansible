@@ -1,0 +1,8 @@
+---
+ hosts: localhost
+ tasks:
+ - name: Installing httpd package
+   yum: 
+    name: httpd
+    state: present 
+   become: true
